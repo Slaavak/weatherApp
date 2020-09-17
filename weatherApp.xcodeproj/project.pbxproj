@@ -13,6 +13,7 @@
 		56F991B82513868500C825DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F991B62513868500C825DC /* Main.storyboard */; };
 		56F991BA2513868B00C825DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F991B92513868B00C825DC /* Assets.xcassets */; };
 		56F991BD2513868B00C825DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F991BB2513868B00C825DC /* LaunchScreen.storyboard */; };
+		56F991C525138D2B00C825DC /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F991C425138D2B00C825DC /* WeatherApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		56F991B92513868B00C825DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F991BC2513868B00C825DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F991BE2513868B00C825DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F991C425138D2B00C825DC /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				56F991B02513868500C825DC /* AppDelegate.swift */,
 				56F991B22513868500C825DC /* SceneDelegate.swift */,
 				56F991B42513868500C825DC /* ViewController.swift */,
+				56F991C425138D2B00C825DC /* WeatherApi.swift */,
 				56F991B62513868500C825DC /* Main.storyboard */,
 				56F991B92513868B00C825DC /* Assets.xcassets */,
 				56F991BB2513868B00C825DC /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F991B52513868500C825DC /* ViewController.swift in Sources */,
+				56F991C525138D2B00C825DC /* WeatherApi.swift in Sources */,
 				56F991B12513868500C825DC /* AppDelegate.swift in Sources */,
 				56F991B32513868500C825DC /* SceneDelegate.swift in Sources */,
 			);
