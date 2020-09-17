@@ -20,14 +20,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var weather: ResultWeather?
     
     var cityText: String?
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
- self.startGettingLocation()
+        
+        self.view.backgroundColor = .white
+        self.startGettingLocation()
     }
-
+    
     private func runUpdate() {
         if let lat = lat, let lon = lon {
             WeatherApi.getWeather(lat: lat, lon: lon) { [weak self] weather in
@@ -49,8 +50,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     private func updateData() {
     }
-
-   //MARK: - Get location
+    
+    //MARK: - Get location
     
     func startGettingLocation() {
         locationManager = CLLocationManager()
