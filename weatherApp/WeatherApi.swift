@@ -49,7 +49,7 @@ struct List: Codable {
     var clouds: Clouds?
     var wind: Wind?
     var visibility: Int
-    var pop: Int
+    var pop: Double?
     var sys: Sys?
     var dt_txt: String?
 }
@@ -62,6 +62,7 @@ struct City: Codable {
     var population: Int?
     var timezone: Int?
     var coord: Coord?
+    var name: String?
 }
 
 struct Coord: Codable {
@@ -81,7 +82,7 @@ class WeatherApi {
     
     static func getWeather(lat: Double, lon: Double, _ completion: @escaping (ResultWeather?) -> () ) {
         
-        let url = URL(string:"https://api.openweathermap.org/data/2.5/onecall?lat=53&lon=27&exclude=minutely&units=metric&appid=ac49b7d9b8c5c5163e0bdd9888250841")
+        let url = URL(string:"https://api.openweathermap.org/data/2.5/forecast?lat=\(lat)&lon=\(lon)&units=metric&appid=ac49b7d9b8c5c5163e0bdd9888250841")
         let session = URLSession.shared
         
         let dataTask = session.dataTask(with: url!) { (data, response, error) in
